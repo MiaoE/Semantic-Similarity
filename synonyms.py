@@ -122,6 +122,6 @@ def run_similarity_test(filename, semantic_descriptors, similarity_fn):
 
 
 if __name__ == "__main__":
-    files = ["casenovel1.txt", "casenovel2.txt"]
+    files = ["./learn/casenovel1.txt", "./learn/casenovel2.txt"]
     des = build_semantic_descriptors_from_files(files)
-    print(str(run_similarity_test("test.txt", des, cosine_similarity)) + "% of the guesses were correct")
+    print(str(run_similarity_test("./test cases/test1.txt", des, cosine_similarity)) + "% of the guesses were correct")
